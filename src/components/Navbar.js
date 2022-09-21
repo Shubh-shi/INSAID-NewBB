@@ -1,11 +1,13 @@
 import React from 'react';
+import "./style.css";
 
 export const Navbar = () => {
   return (
     <header>
         <nav className="navbar navbar-expand-lg bg-white border border-bottom">
-            <div className="container-fluid px-5">
-                <a className="navbar-brand" href="#"><img src='./../insaid-logo.png' width="90%" /></a>
+            
+            <div className="container-fluid">
+                <a className="navbar-brand navbar-position" href="#"><img src='./../insaid-logo.png' width="90%" /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>

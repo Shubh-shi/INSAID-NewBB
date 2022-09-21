@@ -60,8 +60,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-  
-      
       <div className='px-5'>
       {isBigScreen && <HomeHeaderSection /> }
       </div>
@@ -86,12 +84,16 @@ function App() {
       {isSmallScreen && <HomeFifthSectionMobile />}
       </div>
       <div className='px-5'>
-       
         {isBigScreen &&    <HomeSixthSection />}
+      </div>
+      <div className='px-4'>
       {isSmallScreen &&    <HomeSixthSectionMobile />}
+      </div>
+      <div className='px-5'>
         {isBigScreen &&    <HomeSeventhSection />}
-      {isSmallScreen &&   <HomeSeventhSectionMobile />}
-      
+      </div>
+      <div className='px-4'>
+        {isSmallScreen &&   <HomeSeventhSectionMobile />}
       </div>
       <div style={caterbg}>
 
