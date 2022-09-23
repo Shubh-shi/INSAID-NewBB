@@ -14,6 +14,7 @@ import liveinstructorled from './../images/live-instructor-led.png';
 import mentors from './../images/mentors.png';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import Carousel from 'react-bootstrap/Carousel';
 import { style } from "@mui/system";
 const FORM_ENDPOINT = "http://localhost/React-backend/insert.php"; // TODO - fill on the later step
 
@@ -81,65 +82,85 @@ const HomeSeventhSectionMobile = () => {
                 </div>
             </div>
             <div className="row ">
+            <Carousel indicators={false} variant="dark" prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon prev" />} nextIcon={<span aria-hidden="true" className="carousel-control-next-icon next" />}>
+      <Carousel.Item>
+           
                 <div className="col-md-4  p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={lms} alt="lms image" width="50%"/>
                             <h5 class="card-text p-4 ">State-of-the-art LMS</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={programcustomization} alt="program customization image" width="50%"/>
                             <h5 class="card-text p-4 ">Program Customization</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={applicationoriented} alt="application orienterd image" width="50%"/>
                             <h5 class="card-text p-4 ">Application-Oriented</h5>
                     </div>
                 </div>
-            </div>
-            <div class="row ">
+                </Carousel.Item>
+         
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={mentorship} alt="1-1 mentorship image" width="50%" />
                             <h5 class="card-text p-4 ">1:1 Mentorship from C-Suite</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={domainspecific} alt="domain specific image" width="50%"/>
                             <h5 class="card-text p-4 ">Domain-Specific Projects</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={projectmanagers} alt="project managers image" width="50%"/>
                             <h5 class="card-text p-4 ">Dedicated Project Managers</h5>
                     </div>
                 </div>
-            </div>
-            <div class="row ">
+                </Carousel.Item>
+                <Carousel.Item>
+         
+       
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={widevariety} alt="wide variety image" width="50%"/>
                             <h5 class="card-text p-4 ">Wide-Variety of Programs</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={liveinstructorled} alt="live instructor led image" width="50%"/>
                             <h5 class="card-text p-4 ">100% Live Instructor-Led</h5>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-4 p-4 cardshdwoes mb-4">
                     <div className="px-2">
                             <img src={mentors} alt="mentors image" width="50%"/>
                             <h5 class="card-text p-4 ">Industry Leaders as Mentors</h5>
                     </div>
                 </div>
-            </div>
+                </Carousel.Item>
+                </Carousel>
+                    </div>
             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactusmodal">Connect with us</button>
         
             <div class="modal fade" id="contactusmodal" tabindex="-1" aria-labelledby="contactusmodalLabel" aria-hidden="true">

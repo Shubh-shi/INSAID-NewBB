@@ -91,7 +91,7 @@ const [open, setOpen] = React.useState(false);
 
   return (
         
-        <div class="my-3 px-3 col-md-4">
+        <div class="my-3 px-3 col-md-5 col-sm-12">
             <Backdrop
                     sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                     open={open}
@@ -102,23 +102,36 @@ const [open, setOpen] = React.useState(false);
                 <form
                 onSubmit={handleSubmit}
                 id="schedulcall_form">
+            <div className="row">
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="text" placeholder="First Name" name="firstname" id="firstname" required class="form-control my-3" />
                 </div>
+                </div>
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="text" placeholder="Last Name" name="lastname" id="lastname" required class="form-control my-3" />
                 </div>
+                </div>
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="tel" placeholder="Mobile Number" name="mobile" id="mobile" pattern="[789][0-9]{9}" required class="form-control my-3" />
                 </div>
+                </div>
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="email" placeholder="Bussiness Email" name="email"  id="email" required class="form-control my-3"  pattern="^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$"/>
                 </div>
+                </div>
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="text" placeholder="Company" name="company" id="company" required class="form-control my-3" />
                 </div>
+                </div>
+                <div className="col-md-6 col-sm-6">
                 <div class="form-group">
                     <input type="text" placeholder="Designation" name="designation" id="designation" required class="form-control my-3" />
+                </div>
                 </div>
                 <div class="form-group">
                     <select class="form-select my-3" id="domain" required>
@@ -127,7 +140,7 @@ const [open, setOpen] = React.useState(false);
                         <option value="Product Management">Product Management</option>
                     </select>
                 </div>
-                <div className="form-check text-start px-0">
+                <div className="form-check text-start px-3">
                         <label for="training_for" className="mb-2">Training for</label><br />
                     <div className="d-flex">
                         <div className="d-block me-5">
@@ -140,16 +153,17 @@ const [open, setOpen] = React.useState(false);
                         </div>
                     </div>
                 </div>
-                <div className="form-check text-start mt-3">
+                <div className="form-check text-start mt-3 mx-3">
                     <input type="checkbox" id="condition1" name="condition1" value="c1" className="form-check-input" required/>
                     <label className="mb-2 form-check-label">I agree to receive phone calls from INSAID counselors for program/course details</label><br />
                 </div>
-                <div className="form-check text-start">
+                <div className="form-check text-start mx-3">
                     <input type="checkbox" id="condition2" name="condition2" value="c2" className="form-check-input" required/>
                     <label className="mb-2 form-check-label">I agree to receive offers and promotions from INSAID</label><br />
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value='Schedule a Call' />
+                </div>
                 </div>
                 </form>
             </div>

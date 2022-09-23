@@ -3,7 +3,8 @@ import designthinking from './../images/design-thinking-image.png';
 import datascience from './../images/data-science-image.png';
 import artificialintelligent from './../images/artificial-intelligent-image.png';
 import productmanagement from './../images/product-management-image.png';
-
+import Carousel from 'react-bootstrap/Carousel';
+import "./style.css";
 const HomeThirdSectionMobile = () => {
   return (
     <div>
@@ -13,6 +14,8 @@ const HomeThirdSectionMobile = () => {
             </div>
         </div>
         <div class="row mb-5 px-3">
+        <Carousel indicators={false} variant="dark" prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon prev" />} nextIcon={<span aria-hidden="true" className="carousel-control-next-icon next" />}>
+      <Carousel.Item>
                 <div class="col-md-3 mb-5">
                     <div className="px-4">
                     <div class="card">
@@ -23,6 +26,8 @@ const HomeThirdSectionMobile = () => {
                     </div>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-3 mb-5">
                     <div className="px-4">
                     <div class="card">
@@ -33,6 +38,8 @@ const HomeThirdSectionMobile = () => {
                     </div>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-3 mb-5">
                     <div className="px-4">
                     <div class="card">
@@ -43,6 +50,8 @@ const HomeThirdSectionMobile = () => {
                     </div>
                     </div>
                 </div>
+                </Carousel.Item>
+                <Carousel.Item>
                 <div class="col-md-3 mb-5">
                     <div className="px-4">
                     <div class="card">
@@ -53,7 +62,10 @@ const HomeThirdSectionMobile = () => {
                     </div>
                     </div>
                 </div>
-            </div>
+                </Carousel.Item>
+           
+           </Carousel>
+           </div>
             
     </div>
     );
